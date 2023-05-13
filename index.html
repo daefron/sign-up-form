@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="code.js" defer></script>
 </head>
-
 <body>
     <div id="main">
         <div id="left">
@@ -16,46 +16,49 @@
                 <img>
                 <h1>FAKE</h1>
             </div>
-            <p>Photo by Leo Maverick on Unisplash</p>
+            <p>Photo by Leo Maverick on Unisplash&nbsp;&nbsp</p>
         </div>
         <div id="right">
+            <form>
             <div id="top">
                 <p>MAKE ACCOUNT. PURCHASE GOODS. TRADE GOODS. GAIN FRIENDSHIP. PROCREATE.</p>
-                <p>YOU'VE COME THIS FAR.</p>
+                <p id="far">YOU'VE COME THIS FAR.</p>
             </div>
             <div id="mid">
                 <h2>JOIN:</h2>
                 <div id="forms">
-                    <form>
+                    <div class="input">
                         <label for="first_name">FIRST NAME</label>
-                        <input type="text" id="first_name" name="first_name">
-                    </form>
-                    <form>
+                        <input type="text" id="first_name" name="first_name" required>
+                    </div>
+                    <div class="input">
                         <label for="last_name">LAST NAME</label>
-                        <input type="text" id="last_name" name="last_name">
-                    </form>
-                    <form>
+                        <input type="text" id="last_name" name="last_name" required>
+                    </div>
+                    <div class="input">
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email">
-                    </form>
-                    <form>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="text" id="phone" name="phone">
-                    </form>
-                    <form>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                    <div class="input">
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password">
-                    </form>
-                    <form>
+                        <input type="password" id="password" name="password" required>
+                        <p id="pp">*PASSWORDS MUST MATCH</p>
+                    </div>
+                    <div class="input">
                         <label for="confirm">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm" name="confirm">
-                    </form>
+                        <input type="password" id="confirm" name="confirm" required>
+                    </div>
                 </div>
             </div>
             <div id="bot">
-                <button>CREATE ACCOUNT</button>
-                <p>ACCOUNT BEARER? LOG IN.</p>
+                <button id="but" type="button">CREATE ACCOUNT</button>
+                <p>ACCOUNT BEARER? <a href='google.com'>LOG IN.</a></p>
             </div>
+            </form>
         </div>
     </div>
 </body>
